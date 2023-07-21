@@ -1,0 +1,86 @@
+﻿@page
+@model ModMaker101.Pages.beagle.IndexModel
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="description" content="This page is for the beagle mod for if you love dogs"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="~/css/beagle.css" asp-append-version="true"/>
+	<link rel="shortcut icon" href=""/>
+	<title>@{ViewData["Title"] = "Beagle Mod";}</title>
+	<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container text-center">
+		<h1>Beagle Mod</h1>
+		<p>Learn how to download the Beagle Mod!</p>
+    </div>
+    <div class="spacer-v160"></div>
+	<div class="download">
+		<div class="text-center">
+            <h2>How to download</h2>
+        </div>
+        <div class="spacer-v60"></div>
+    </div>
+        <div class="row">
+            <div class="col-4">
+                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="#item-1">How to Download</a>
+                        <nav class="nav flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-1-1">After You Download</a>
+                        </nav>
+                        <a class="nav-link" href="#item-2">When the file is in Minecraft</a>
+                        <nav class="nav flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-2-1">When the packs are activated</a>
+                        </nav>
+                        <a class="nav-link" href="#item-3">Create the world</a>
+                        <nav class="nav flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-3-1">Have Fun</a>
+                        </nav>
+                    </nav>
+                </nav>
+            </div>
+
+            <div class="col-8">
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                    <div id="item-1">
+                        <h4>How to download</h4>
+                        <p>First go to planet minecraft and download the mod.</p>
+                    <a href="https://www.planetminecraft.com/mod/beagle-bedrock/">Planet Minecraft</a>
+                    </div>
+                    <div class="spacer-v40"></div>
+                    <div id="item-1-1">
+                        <h5>After You Download</h5>
+                        <p>Open the .zip file and press the mcpack files.</p>
+                    </div>
+                    <div class="spacer-v40"></div>
+                    <div id="item-2">
+                        <h5>When the File is in Minecraft</h5>
+                        <p>Create a new world activate the packs.</p>
+                    </div>
+                    <div class="spacer-v40"></div>
+                    <div id="item-2-1">
+                        <h5>When the packs are activated</h5>
+                        <p>Go down to the experiments and activate all.</p>
+                    </div>
+                    <div class="spacer-v40"></div>
+                    <div id="item-3">
+                        <h4>Create the world</h4>
+                        <p>Go to the menu and grab a the beagle spawn egg.</p>
+                    </div>
+                    <div class="spacer-v40"></div>
+                    <div id="item-3-1">
+                        <h5>Have Fun</h5>
+                        <p>Enjoy the mod and thanks for downloading it!</p>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+	
+</body>
+</html>

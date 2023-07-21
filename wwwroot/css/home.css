@@ -1,0 +1,44 @@
+﻿.featureImage{
+    width:100%;
+    position:relative;
+    height:375px;
+    background-size:cover;
+    background-position:center;
+    background-image:url(/images/feature.jpg);
+}
+.featureImage .text{
+    margin:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:80%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    color:azure;
+    transition-duration:1s;
+    transition-delay:0.5s;
+    color:azure;
+}
+.primary-message{
+    color:black;
+}
+
+.hr-5{
+    width:500px;
+}
+@media(max-width: 786px){
+    .hr-5{
+        width:350px;
+    }
+    .featureImage{
+        height:300px
+    }
+}
+@media screen (max-width:400px){
+    .hr-5{
+        width:300px;
+    }
+    .featureImage{
+        height:200px;
+    }
+}

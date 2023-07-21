@@ -1,0 +1,102 @@
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px;
+}
+.spacer-v160{
+    height:160px;
+}
+.spacer-v80{
+    height:80px;
+}
+.spacer-v60 {
+    height: 60px;
+}
+.spacer-v40{
+    height:40px;
+}
+.spacer-v20{
+    height:20px;
+}
+.spacer-v10{
+    height:10px;
+}
+.fade-in {
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.slow-fade-in {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+    100%{
+        opacity:2;
+    }
+}
+.text-grey{
+    color:grey
+}
+.text-light-grey {
+    color: lightgray
+}
+.spacer-feature {
+    height: 200px;
+}
+.gFont{
+    font-family:'HYWenHei 85W'
+}
+/*Font size for the second heading*/
+.font20{
+    font-size:20px;
+}
+/*Beginning of boldness rules*/
+.bold600{
+    font-weight:600;
+}
+.bold500{
+    font-weight:500;
+}
+.bold400{
+    font-weight:400;
+}
+.bold300{
+    font-weight:300;
+}
+.boldlighter{
+    font-weight:lighter;
+}
+/*End of the boldness rules*/

@@ -1,0 +1,90 @@
+﻿@page "/"
+@model IndexModel
+<head>
+    <title>@{ViewData["Title"]  = "Home";}</title>
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true"/>
+    <script src="~/js/home.js"></script>
+    <link rel="shortcut icon" href="~/icons/favicon.png" />
+</head>
+<body>
+    <!--This is the feature image with the slow fade styles-->
+    <div class="container slow-fade-in">
+        <div class="featureImage rounded-2">
+            <div class="text">
+                <div class="text-center">
+                    <h1 class="display-4 ">Welcome</h1>
+                    <p>Learn about me and how to contact me and Download my addons an packs.</p>
+                </div>
+             </div>
+        </div>
+    </div>
+    <div class="spacer-v60"></div>
+    <div class="text-center primary-message fade-in">
+        <!--This is the secondary title-->
+        <p class="font20 bold600">
+            These are top notch mod and packs in development.
+            <br/>
+            We know you'll love them.
+        </p>
+    </div>
+    <!--This is one for the showcase things-->
+    <div class="spacer-v60"></div>
+    <div id="beagle-feature" class="feature text-start float-start fade-in">
+        <div class="left-column">
+            <h2>Love Beagles?</h2>
+            <div class="sub-heading">Best Beagle Mod Ever</div>
+            <hr  class="hr-5"/>
+            <p>A mod and skins we have it all</p>
+            <p class="text-danger">The tail is a little bit off</p>
+            <br/>
+            <a id="beagle" asp-area="" asp-page="/beagle" class="text-decoration-none" title="Beagle Page">Click Here For More</a>
+        </div>
+    </div>
+    <div class="spacer-feature"></div>
+    <div class="spacer-v80"></div>
+    <div class="naruto-feature fade-in">
+        <div class="right-column text-end float-end">
+            <h2 class="title">Love Anime?</h2>
+            <div class="sub-heading">Best Naruto Mod ever?</div>
+            <hr class="hr-5" />
+            <p class="sub-paragraph">We have one of the best Naruto mods of all time<b> "Believe It!"</b></p>
+            <p class="text-danger">This is still in development.</p>
+            <br />
+            <a id="naruto-mod" asp-area="pages" asp-page="/naruto" class="text-decoration-none" title="Naruto Page">Click here for more</a>
+        </div>
+    </div>
+        <div class="spacer-v80"></div>
+        <div class="spacer-feature"></div>
+        <div class="naruto-skin-feature fade-in">
+            <div class="right-column text-start float-start">
+                <h2 class="title">Want skins with you naruto mod?</h2>
+                <div class="sub-heading">Best Naruto skins ever</div>
+                <hr class="hr-5"/>
+                <p class="sub-paragraph">We have some of the best naruto skins for you Naruto Mod</p>
+                <p class="text-danger">We are adding more skins in the near future</p>
+            </div>
+        </div>
+        <div class="spacer-v80"></div>
+        <div class="spacer-feature"></div>
+        <div class="container">
+            <div class="fade-in text-end float-end">
+                <h2>Want Dog skins</h2>
+                <div class="sub-heading">we have the best dog skins ever?</div>
+                <hr class="hr-5"/>
+                <p class="sub-paragraph">We have robo dog skins and beagle skins.</p>
+                <p class="text-danger">These are for both bedrock and java don't get them confused</p>
+            </div>
+        </div>
+        <div class="spacer-v80"></div>
+        <div class="spacer-feature"></div>
+        <div class="container">
+            <div class="fade-in text-start float-start">
+                <h2>Want Resource Packs?</h2>
+                <div class="sub-heading">We Have some of the best resource packs</div>
+                <hr class="hr-5"/>
+                <p class="sub-paragraph">We have texture packs ranges from 16px-HD</p>
+                <p class="text-danger">These might have some bugs</p>
+            </div>
+        </div>
+        <div class="spacer-feature"></div>
+   </body>

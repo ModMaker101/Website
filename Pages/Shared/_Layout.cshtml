@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--This is for seo-->
+    <meta name="description" content="This is ModMaker101's website and I make minecraft bedrock mods for the community"/>
+    <title>@ViewData["Title"] - ModMaker101</title>
+    <!--Boostrap-->
+    <link rel="icon" type="image/x-icon" href="~/icons/favicon.ico" />
+    <environment names="production">
+        <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true"/>
+    </environment>
+    <environment names="development">
+        <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" asp-append-version="true"/>
+    </environment>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ModMaker101.styles.css" asp-append-version="true" />
+    <!-- Google tag (gtag.js) for mm101.com-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0K0B7FQT40"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0K0B7FQT40');
+    </script>
+    <!-- Google tag (gtag.js) for mm101.net-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGR58NVZ5C"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MGR58NVZ5C');
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container fade-in">
+                <!--The id mainHeading is for the js-->
+                <a class="navbar-brand mm101text gFont boldlighter" asp-area="" asp-page="/Index"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy" style="cursor:pointer">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container fade-in gFont">
+            &copy; 2023 - ModMaker101 - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+    <!--This is for the production and development enviroments-->
+    <environment names="production">
+        <script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="development">
+        <script src="~/lib/jquery/dist/jquery.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="production">
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="development">
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js" asp-append-version="true"></script>
+    </environment>
+    
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
